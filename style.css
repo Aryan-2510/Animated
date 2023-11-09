@@ -74,9 +74,9 @@ html,body {
 
 #imagewrapper img
 { 
-    position: absolute;
-    width: 120%;
-    height: 120%;
+    
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -169,7 +169,7 @@ html,body {
 }
 
 #motive span{
-    background-color: #5e5e5e;
+    
     display: inline-block;
     
     margin: 13px;
@@ -220,7 +220,7 @@ html,body {
 }
 
 #firstpic #picimage{
-    background-color: red;
+    
     width: 100%;
     height: 25vw;
     margin-bottom: 24px;
@@ -253,7 +253,7 @@ html,body {
 }
 
 #secondpic #picimage2{
-    background-color: red;
+    
     width: 100%;
     height: 35vw;
     margin-bottom: 24px;
@@ -354,4 +354,5 @@ html,body {
     text-transform: capitalize;
     margin-top: 10px;
     color: #474646;
+    background-color: #ffffff;
 }
