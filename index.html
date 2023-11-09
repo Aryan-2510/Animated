@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css ">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,26 +14,28 @@
         <div id="home">
         <div id="nav">
             <div id="nleft">
-                <a href="#">Home</a><a href="#">Pricing</a><a href="#">Products</a>
+                <a class="nlink" href="#">Home</a>
+                <a class="nlink" href="#">Pricing</a>
+                <a class="nlink" href="#">Products</a>
             </div>
-                <a id="centeratag" href="#">Heligerians</a>
+                <a class="nlink" id="centeratag" href="#">Heligerians</a>
             <div id="nright">
-                <a href="#">Our Journey</a>
+                <a class="nlink" href="#">Our Journey</a>
          </div>   
          
          
         </div>
         <div id="hero">
-            <div id="sustain">
+            <div class="anim2" id="sustain">
             <h5>01.</h5>
             <h2>Amrik SukhDev</h2>
             <p>Must-visit destination for travellers on the Delhi-Ambala highway.</p>
-            <div id="imagewrapper">
+            <div class="imgeff" id="imagewrapper">
                 <img src="image/1stVertical.jpg" alt="">
             </div>
         </div>
 
-        <div id="ephemeral">
+        <div class="anim2" id="ephemeral">
           <div id="headings">
             <h1>Odyssey</h1>
             <h1>Devotee.</h1>
@@ -42,7 +46,7 @@
         </div>
         </div>
 
-        <div id="visit">
+        <div class="anim2" id="visit">
             <div id="circlev">
                 <i class="ri-arrow-down-line"></i>
             </div>
@@ -50,49 +54,64 @@
         </div>
          </div>
 
-         <div id="motive">
-            <h4>OUR MOTIVE</h4>
-            <p>Embark on a journey with Heligerians, where every destination is a chapter,<span id="onespan"></span> and every experience is a page in the book of your life's adventures. <span id="twospan"></span> Let us be your trusted companion in <br>crafting travel <span id="threespan"></span> stories that linger in your heart forever.</p>
-         </div>
-
-         <div id="pictures">
-            <div id="firstpic">
-                <div id="picimage">
-                    <img src="image/motive2.jpg" alt="">
-                </div>
-                <h1>MANALI</h1>
-                <p>I wanna see snow views on fresh.</p>
-            </div>
-
-            <div id="secondpic">
-                <div id="picimage2">
-                  <img src="image/motive1.jpg" alt="">
-                </div>
-                <h1>ROHTANG PASS</h1>
-                <p>A timeless beauty which is crowning the jewels of Manali Tourism and frequented by visitors from all over the world.</p>
-            </div>
-         </div>
-
-         <div id="banner">
-            <div id="bimg">
-                <img src="image/banner.jpg" alt="">
-            </div>
-            <div id="btext">
-                <h1>Dhuan</h1>
-                <h1>Ud Gaya</h1>
-                <p>"Fuel your wanderlust, pack your bags, and let the good times roll – because the only thing better than a great trip is experiencing it with your favorite people. Let's turn moments into memories, one epic journey at a time!"</p>
-            </div>
-         </div>
-
-         <div id="future">
-            <video src="image/Future1.mp4" autoplay loop></video>
-            <div id="ftext">
-                <h2>Think of Travel</h2>
-                <button>Join the Life</button>
-            </div>
-         </div>
+         
     </div>
+    <div id="motive">
+        <h4>OUR MOTIVE</h4>
+        <p>Embark on a journey with Heligerians, where every destination is a chapter,<span id="onespan"></span> and every experience is a page in the book of your life's adventures. <span id="twospan"></span> Let us be your trusted companion in <br>crafting travel <span id="threespan"></span> stories that linger in your heart forever.</p>
+     </div>
+
+     <div id="pictures">
+        <div id="firstpic">
+            <div class="imgeff" id="picimage">
+                <img src="image/motive2.jpg" alt="">
+            </div>
+            <h1>MANALI</h1>
+            <p>I wanna see snow views on fresh.</p>
+        </div>
+
+        <div id="secondpic">
+            <div class="imgeff" id="picimage2">
+              <img src="image/motive1.jpg" alt="">
+            </div>
+            <h1>ROHTANG PASS</h1>
+            <p>A timeless beauty which is crowning the jewels of Manali Tourism and frequented by visitors from all over the world.</p>
+        </div>
+     </div>
+
+     <div id="banner">
+        <div id="bimg">
+            <img src="image/banner.jpg" alt="">
+            <img src="image/banner2.jpg" alt="">
+        </div>
+        <div id="btext">
+            <h1>Dhuan</h1>
+            <h1>Ud Gaya</h1>
+            <p>"Fuel your wanderlust, pack your bags, and let the good times roll – because the only thing better than a great trip is experiencing it with your favorite people. Let's turn moments into memories, one epic journey at a time!"</p>
+        </div>
+     </div>
+
+     <div id="future">
+        <video src="image/Future1.mp4" autoplay muted loop></video>
+        <div id="ftext">
+            <h2>Think of Travel</h2>
+            <button>Join the Life</button>
+        </div>
+     </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+ 
+    <script src="script.js"></script>
 </body>
 </html>
